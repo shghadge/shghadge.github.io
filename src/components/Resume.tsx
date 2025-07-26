@@ -1,11 +1,11 @@
 const Resume = () => {
   return (
     <section id="myresume" className="section min-h-screen max-h-screen lg:min-h-[calc(100vh-5rem)] flex items-center justify-center ml-0 lg:ml-10 px-4 font-mono text-base lg:scroll-mt-24 snap-start">
-      <div className="w-full max-w-3xl font-medium flex flex-col items-center" >
-        <h2 className="text-xl font-bold w-full text-left mb-8 text-orange-400 lowercase">resume</h2>
-        <div className="w-full flex justify-center">
+      <div className="w-full max-w-3xl h-[70vh] font-medium flex flex-col items-center justify-around" >
+        <h2 className="text-xl font-bold w-full flex  text-left mb-8 text-orange-400 lowercase">resume</h2>
+        <div className="w-full h-full flex justify-center">
           {/* Desktop PDF embed */}
-          <div className="hidden md:flex w-full min-h-100 border rounded-lg bg-slate-800  items-center justify-center">
+          <div className="hidden md:flex w-full  border rounded-lg bg-slate-800  items-center justify-center">
             <embed
               src="/ShubhamGhadgeResume.pdf#toolbar=0&navpanes=0&statusbar=0&sidebar=0"
               title="Resume PDF"
@@ -22,7 +22,7 @@ const Resume = () => {
         <a
           href="/ShubhamGhadgeResume.pdf"
           download
-          className="mt-6 px-4 py-2 bg-orange-400 text-slate-900 rounded font-semibold hover:bg-orange-500 transition"
+          className="mt-6 px-4 flex py-2 bg-orange-400 text-slate-900 rounded font-semibold hover:bg-orange-500 transition"
         >
           Download PDF
         </a>

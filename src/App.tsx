@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Navigation from './components/Navigation';
+import LeftNav from './components/LeftNav';
 import Resume from './components/Resume';
 import TopNav from './components/TopNav';
 import ScrollIndicator from './components/ScrollIndicator';
@@ -50,7 +50,7 @@ function App() {
 
       {/* Left nav: hidden on mobile and md */}
       <div className="hidden md:block">
-        <Navigation activeSection={activeSection} />
+        <LeftNav activeSection={activeSection} />
       </div>
 
       {/* Right scroll indicator: hidden on mobile */}

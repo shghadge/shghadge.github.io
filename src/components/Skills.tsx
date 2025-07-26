@@ -11,16 +11,16 @@ const Skills = () => {
   return (
     <section id="skills" className="section min-h-screen flex items-center justify-center ml-0 lg:ml-10 px-4 font-mono text-base">
       <div className="w-full font-medium">
-        <h2 className="mb-8 text-orange-400 font-normal lowercase text-base">technical skills</h2>
-        <div className="mb-4 text-sm lowercase">
+        <h1 className="mb-4 lowercase text-2xl font-bold text-orange-400">technical skills</h1>
+        <div className="mb-4 text-base lowercase">
           <span className="font-semibold text-blue-400">Proficient:</span>{' '}
           {skills.slice(0, 12).map((skill, i) => (
-            <span key={skill} className="text-orange-400">
+            <span key={skill} className="">
               {skill}{i < 11 ? ', ' : ''}
             </span>
           ))}
         </div>
-        <div className="mb-4 text-sm lowercase">
+        <div className="mb-4 text-base lowercase">
           <span className="font-semibold text-blue-400">Familiar:</span>{' '}
           {skills.slice(12).map((skill, i) => (
             <span key={skill} className="text-gray-300">
@@ -28,7 +28,7 @@ const Skills = () => {
             </span>
           ))}
         </div>
-        <div className="mb-4 text-sm lowercase">
+        <div className="mb-4 text-base lowercase">
           <span className="font-semibold text-blue-400">Social:</span>{' '}
           {socialSkills.map((skill, i) => (
             <span key={skill} className="text-gray-300">

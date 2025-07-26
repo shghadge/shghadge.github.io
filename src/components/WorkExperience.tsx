@@ -36,8 +36,8 @@ const workExperienceData = [
 const WorkExperience = () => {
   return (
    <section id="work-experience" className="section min-h-screen max-h-screen lg:min-h-[calc(100vh-5rem)] flex items-center justify-center ml-0 lg:ml-10 px-4 font-mono text-base lg:scroll-mt-24 snap-start">
-      <div className="w-full max-w-3xl font-medium max-h-dvh overflow-y-auto pb-40">
-        <h2 className="text-xl mb-8 lg:hidden text-violet-400 font-normal lowercase">work experience</h2>
+      <div className="w-full max-w-3xl font-medium">
+        <h1 className="mb-10 lowercase text-2xl font-bold text-orange-400">work experience</h1>
         <Timeline accentColor="bg-orange-400">
           {workExperienceData.map((item) => (
             <div key={item.title + item.period} className="mb-8">

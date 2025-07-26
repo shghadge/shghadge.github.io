@@ -14,7 +14,7 @@ const TopNav = ({ activeSection }: TopNavProps) => {
 
   return (
     <nav className="fixed top-0 left-0 w-full h-20 bg-slate-900 z-50 flex items-center justify-center font-mono">
-      <ul className="flex space-x-8 text-sm">
+      <ul className="flex space-x-8 text-base">
         {navItems.map((item) => (
           <li key={item.id}>
             <button

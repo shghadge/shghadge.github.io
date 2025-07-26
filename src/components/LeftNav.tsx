@@ -4,7 +4,7 @@ interface NavigationProps {
   activeSection: string;
 }
 
-const Navigation = ({ activeSection }: NavigationProps) => {
+const LeftNav = ({ activeSection }: NavigationProps) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -13,13 +13,13 @@ const Navigation = ({ activeSection }: NavigationProps) => {
   };
 
   return (
-    <nav className="fixed left-10 top-0 h-dvh w-48 bg-slate-900 z-40 hidden lg:flex flex-col justify-center font-mono text-sm">
+    <nav className="fixed left-10 top-0 h-dvh w-48 bg-slate-900 z-40 hidden lg:flex flex-col justify-center font-mono text-">
       <ul className="space-y-4">
         {navItems.map((item) => (
           <li key={item.id}>
             <button
               onClick={() => scrollToSection(item.id)}
-              className={`text-left w-full text-sm font-normal ${
+              className={`text-left w-full text-base font-normal ${
                 activeSection === item.id
                   ? 'text-orange-400 underline underline-offset-5'
                   : 'text-gray-400'
@@ -35,4 +35,4 @@ const Navigation = ({ activeSection }: NavigationProps) => {
   );
 };
 
-export default Navigation;
+export default LeftNav;

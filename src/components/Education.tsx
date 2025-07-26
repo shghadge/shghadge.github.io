@@ -22,13 +22,18 @@ import Timeline from "./Timeline";
 const Education = () => {
   return (
     <section id="education" className="section min-h-screen max-h-screen lg:min-h-[calc(100vh-5rem)] flex items-center justify-center ml-0 lg:ml-10 px-4 font-mono text-base lg:scroll-mt-24 snap-start">
-      <div className="w-full max-w-3xl font-medium max-h-dvh overflow-y-auto pb-40">
+      
+      <div className="w-full max-w-3xl font-medium text-justify ">
+        <h1 className="mb-10 lowercase text-2xl font-bold text-orange-400">education</h1>
         <Timeline>
           {educationData.map((item) => (
-            <div key={item.title} className="flex flex-col items-center md:items-start w-full">
-              <h3 className={`text-base mb-1 font-medium lowercase ${item.color}`}>{item.title}</h3>
-              <p className="text-xs text-gray-400 mb-1">{item.place} • {item.period}</p>
-              <p className="text-sm text-gray-300">{item.description}</p>
+            <div key={item.title} className="flex flex-col  md:items-start w-full mb-8">
+              <h3 className={`font-semibold text-lg ${item.color}`}>{item.title}</h3>
+              <p className="text-gray-400 text-sm">{item.place}</p>
+              <p className="text-gray-400 text-xs">{item.period}</p>
+              {item.description && (
+                <p className="text-gray-300 text-xs mt-1">{item.description}</p>
+              )}
             </div>
           ))}
         </Timeline>

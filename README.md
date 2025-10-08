@@ -24,16 +24,19 @@ A clean, minimal portfolio website built with React, TypeScript, and Tailwind CS
 ## Getting Started
 
 1. Install dependencies:
+
    ```bash
    npm install
    ```
 
 2. Start the development server:
+
    ```bash
    npm run dev
    ```
 
 3. Build for production:
+
    ```bash
    npm run build
    ```
@@ -42,31 +45,6 @@ A clean, minimal portfolio website built with React, TypeScript, and Tailwind CS
    ```bash
    npm run preview
    ```
-
-## Project Structure
-
-```
-src/
-├── components/
-│   ├── About.tsx
-│   ├── Contact.tsx
-│   ├── Education.tsx
-│   ├── Navigation.tsx
-│   ├── Projects.tsx
-│   ├── ScrollIndicator.tsx
-│   ├── Skills.tsx
-│   └── WorkExperience.tsx
-├── App.tsx
-├── main.tsx
-└── index.css
-```
-
-## Customization
-
-- Update personal information in component files
-- Modify colors in Tailwind config
-- Add new sections by creating components and updating navigation
-- Replace placeholder content with your actual portfolio data
 
 ## License
 

@@ -1,19 +1,4 @@
-export const sections = [
-  'about',
-  'skills',
-  'education',
-  'work-experience',
-  'projects',
-  'myresume',
-  'contact',
-];
+// This file is deprecated - navigation data is now in src/data/portfolio.json
+// Import from ../constants.ts instead
 
-export const navItems = [
-  { id: 'about', label: 'about' },
-  { id: 'skills', label: 'skills' },
-  { id: 'education', label: 'education' },
-  { id: 'work-experience', label: 'work experience' },
-  { id: 'projects', label: 'projects' },
-  { id: 'myresume', label: 'resume' },
-  { id: 'contact', label: 'contact me' },
-];
+export { sections, navItems } from '../constants';

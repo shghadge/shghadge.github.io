@@ -1,0 +1,151 @@
+{
+  "contact": {
+    "email": "shubhamghadge02@gmail.com",
+    "phone": "+1 916 495 4191",
+    "github": {
+      "url": "https://github.com/shghadge",
+      "username": "shghadge"
+    },
+    "linkedin": {
+      "url": "https://linkedin.com/in/shghadge",
+      "username": "shghadge"
+    }
+  },
+  "education": [
+    {
+      "degree": "Master's in Computer Science",
+      "institution": "California State University, Sacramento",
+      "shortName": "CSUS",
+      "period": "August 2024 - May 2026",
+      "gpa": "3.45/4.0",
+      "url": "https://www.csus.edu/"
+    },
+    {
+      "degree": "Bachelor's in Information Technology",
+      "institution": "Savitribai Phule Pune University, Pune",
+      "shortName": "SPPU",
+      "period": "August 2016 - May 2019",
+      "gpa": "3.52/4.0",
+      "url": null
+    }
+  ],
+  "workExperience": [
+    {
+      "title": "Software Engineer Intern",
+      "company": "Office Of Water Programs",
+      "shortName": "office of water programs",
+      "period": "July 2025 - Current",
+      "location": "Sacramento, CA, USA",
+      "description": [],
+      "url": "https://www.owp.csus.edu/"
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Great Software Laboratory (GAVS)",
+      "shortName": "Great Software Laboratory",
+      "period": "July 2019 - July 2024",
+      "location": "Pune, India",
+      "description": [],
+      "url": "https://www.linkedin.com/company/gs-lab/about/"
+    }
+  ],
+  "skills": {
+    "technical": {
+      "proficient": [
+        "Go (Golang)", "Python", "MongoDB", "MySQL", "Flask", "Git", "Docker", 
+        "Kubernetes", "GitHub Actions", "Helm", "Grafana", "Prometheus", "Linux", 
+        "Microservices", "REST APIs", "gRPC", "OpenTelemetry", "pprof"
+      ],
+      "familiar": [
+        "HTML/CSS", "JavaScript", "TypeScript", "ReactJS", "Rust", "WebSockets", "Bash",
+        "Kafka", "S3", "HyperLedger Fabric", "Jaeger", "OpenStack", "RBAC", "ABAC", 
+        "OpenID", "AWS", "GCP", "vSphere", "LLMs", "RAG", "LangChain", "MCP"
+      ]
+    },
+    "social": [
+      "Teamwork", "Communication", "Collaboration", "Adaptability", "Problem Solving"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Privacy-Preserving File Organizer",
+      "technologies": "Go, Python, Rust, Ollama, LangChain",
+      "description": "Building a local, context-aware file organizer using LLMs to analyze and auto-classify files without cloud dependencies.",
+      "period": "Present",
+      "category": "Current"
+    },
+    {
+      "name": "Operating System Development",
+      "technologies": "Rust",
+      "description": "Developing a small operating system from scratch to explore low-level systems programming.",
+      "period": "Present",
+      "category": "Current"
+    },
+    {
+      "name": "Model Context Protocol Server",
+      "technologies": "Go, MCP",
+      "description": "Developing an MCP Server for a custom TODO app to learn structured AI integration.",
+      "period": "Present",
+      "category": "Current"
+    },
+    {
+      "name": "Kyndryl Bridge - Tag Service",
+      "technologies": "Go, Kafka, XACML, Docker, Kubernetes, MongoDB",
+      "description": "Developed Tag Service for policy enforcement, remediation, bulk validation, and CLI tooling, integrated via Open Service Broker API.",
+      "period": "Jun 2019 - Jul 2024",
+      "category": "Past"
+    },
+    {
+      "name": "Kyndryl Bridge - Common Inventory",
+      "technologies": "Go, MongoDB, RBAC, ABAC, OAuth 2.0",
+      "description": "Built service ingesting 10M+ daily records, with caching, indexing, and access control policies.",
+      "period": "Jun 2019 - Jul 2024",
+      "category": "Past"
+    },
+    {
+      "name": "Kyndryl Bridge - Discovery Extractors",
+      "technologies": "Go, Kafka, WebSockets",
+      "description": "Engineered extractors processing 500K+ assets/hour, WebSocket fetchers, and Kafka pipelines with n-way sync streaming.",
+      "period": "Jun 2019 - Jul 2024",
+      "category": "Past"
+    }
+  ],
+  "publications": [
+    {
+      "title": "A Long Short-Term Memory (LSTM) Neural Architecture for Presaging Stock Prices",
+      "venue": "WEBIST 2025",
+      "paperNumber": "Paper #33",
+      "year": "2025"
+    }
+  ],
+  "resume": {
+    "filename": "ShubhamGhadgeResume.pdf",
+    "mobileMessage": "PDF rendering is not supported on mobile devices. Please use the download button below to view the resume."
+  },
+  "navigation": {
+    "sections": [
+      "about",
+      "skills", 
+      "education",
+      "work-experience",
+      "projects",
+      "myresume",
+      "contact"
+    ],
+    "navItems": [
+      { "id": "about", "label": "about" },
+      { "id": "skills", "label": "skills" },
+      { "id": "education", "label": "education" },
+      { "id": "work-experience", "label": "work experience" },
+      { "id": "projects", "label": "projects" },
+      { "id": "myresume", "label": "resume" },
+      { "id": "contact", "label": "contact me" }
+    ]
+  },
+  "meta": {
+    "title": "Portfolio - Shubham Ghadge",
+    "greeting": "hello, world!",
+    "contactHeading": "contact me",
+    "contactSubtext": "let's build something amazing together."
+  }
+}

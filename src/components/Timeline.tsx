@@ -55,7 +55,7 @@ class Timeline extends Component<TimelineProps> {
               <React.Fragment key={idx}>
                 {/* Left cell (even rows) */}
                 <div
-                  className={`pr-8 col-span-1 row-span-1 flex items-center justify-end ${
+                  className={`pr-8 col-span-1 row-span-1 flex items-center justify-start ${
                     idx % 2 === 0 ? "" : "invisible"
                   }`}
                 >
@@ -68,7 +68,9 @@ class Timeline extends Component<TimelineProps> {
                   />
                   {/* Vertical line, skip for last */}
                   {!isLast && (
-                    <div className={`w-0.25 h-full  ${accentColor} rounded-full`} />
+                    <div
+                      className={`w-0.25 h-full  ${accentColor} rounded-full`}
+                    />
                   )}
                 </div>
                 {/* Right cell (odd rows) */}

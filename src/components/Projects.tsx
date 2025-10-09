@@ -74,7 +74,7 @@ const Projects = () => {
                   <div key={project.name}>
                     <span className="text-red-400 font-medium">{project.name}</span>
                     <span> | <span className="text-gray-400">{project.technologies}</span></span>
-                    {project.period && <span className="text-gray-500 text-sm"> • {project.period}</span>}
+                    {project.period && <span className="text-gray-500"> • {project.period}</span>}
                     <ul className="list-disc ml-6 mt-2 text-gray-400">
                       <li>{project.description}</li>
                     </ul>

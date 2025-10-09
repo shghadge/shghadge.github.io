@@ -2,7 +2,6 @@
 
 A clean, minimal portfolio website built with React, TypeScript, and Tailwind CSS.
 
-
 ## Tech Stack
 
 - **React 18** - UI library
@@ -11,7 +10,6 @@ A clean, minimal portfolio website built with React, TypeScript, and Tailwind CS
 - **Vite** - Build tool
 - **JetBrains Mono** - Typography
 
+## About
 
-## License
-
-MIT
+This project is my playground for trying out modern web tech, and also doubles as my portfolio. Built mostly for fun and learning!

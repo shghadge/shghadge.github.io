@@ -50,64 +50,111 @@
     }
   ],
   "skills": {
-    "technical": {
-      "proficient": [
-        "Go (Golang)", "Python", "MongoDB", "MySQL", "Flask", "Git", "Docker", 
-        "Kubernetes", "GitHub Actions", "Helm", "Grafana", "Prometheus", "Linux", 
-        "Microservices", "REST APIs", "gRPC", "OpenTelemetry", "pprof"
-      ],
-      "familiar": [
-        "HTML/CSS", "JavaScript", "TypeScript", "ReactJS", "Rust", "WebSockets", "Bash",
-        "Kafka", "S3", "HyperLedger Fabric", "Jaeger", "OpenStack", "RBAC", "ABAC", 
-        "OpenID", "AWS", "GCP", "vSphere", "LLMs", "RAG", "LangChain", "MCP"
-      ]
-    },
-    "social": [
-      "Teamwork", "Communication", "Collaboration", "Adaptability", "Problem Solving"
+    "categories": [
+      {
+        "name": "languages",
+        "items": [
+          "Go (Golang)",
+          "Python",
+          "Rust",
+          "JavaScript",
+          "TypeScript",
+          "Bash",
+          "HTML/CSS"
+        ]
+      },
+      {
+        "name": "backend & frameworks",
+        "items": [
+          "Flask",
+          "ReactJS",
+          "Microservices",
+          "REST APIs",
+          "gRPC",
+          "WebSockets",
+          "Kafka"
+        ]
+      },
+      {
+        "name": "databases & storage",
+        "items": [
+          "MongoDB",
+          "MySQL",
+          "S3"
+        ]
+      },
+      {
+        "name": "devops & cloud",
+        "items": [
+          "Git",
+          "Docker",
+          "Kubernetes",
+          "GitHub Actions",
+          "Helm",
+          "Linux",
+          "AWS",
+          "GCP",
+          "vSphere",
+          "OpenStack"
+        ]
+      },
+      {
+        "name": "observability",
+        "items": [
+          "Grafana",
+          "Prometheus",
+          "OpenTelemetry",
+          "pprof",
+          "Jaeger"
+        ]
+      },
+      {
+        "name": "security & protocols",
+        "items": [
+          "RBAC",
+          "ABAC",
+          "OpenID",
+          "HyperLedger Fabric"
+        ]
+      }
     ]
   },
   "projects": [
     {
-      "name": "Privacy-Preserving File Organizer",
-      "technologies": "Go, Python, Rust, Ollama, LangChain",
-      "description": "Building a local, context-aware file organizer using LLMs to analyze and auto-classify files without cloud dependencies.",
-      "period": "Present",
-      "category": "Current"
+      "name": "TUI Kanban Board",
+      "technologies": "Go",
+      "description": "A simple TUI Kanban Board using Go.",
+      "link": "https://github.com/shghadge/kanban_board"
     },
     {
       "name": "Operating System Development",
       "technologies": "Rust",
       "description": "Developing a small operating system from scratch to explore low-level systems programming.",
-      "period": "Present",
-      "category": "Current"
+      "link": null
     },
     {
       "name": "Model Context Protocol Server",
       "technologies": "Go, MCP",
       "description": "Developing an MCP Server for a custom TODO app to learn structured AI integration.",
-      "period": "Present",
-      "category": "Current"
+      "link": null
     },
     {
       "name": "Kyndryl Bridge - Tag Service",
       "technologies": "Go, Kafka, XACML, Docker, Kubernetes, MongoDB",
       "description": "Developed Tag Service for policy enforcement, remediation, bulk validation, and CLI tooling, integrated via Open Service Broker API.",
-      "period": "Jun 2019 - Jul 2024",
-      "category": "Past"
+      "link": null
     },
     {
       "name": "Kyndryl Bridge - Common Inventory",
       "technologies": "Go, MongoDB, RBAC, ABAC, OAuth 2.0",
       "description": "Built service ingesting 10M+ daily records, with caching, indexing, and access control policies.",
-      "period": "Jun 2019 - Jul 2024",
-      "category": "Past"
+      "link": null
     },
     {
       "name": "Kyndryl Bridge - Discovery Extractors",
       "technologies": "Go, Kafka, WebSockets",
       "description": "Engineered extractors processing 500K+ assets/hour, WebSocket fetchers, and Kafka pipelines with n-way sync streaming.",
-      "period": "Jun 2019 - Jul 2024",
-      "category": "Past"
+      "link": null
     }
   ],
   "publications": [
@@ -125,7 +172,7 @@
   "navigation": {
     "sections": [
       "about",
-      "skills", 
+      "skills",
       "education",
       "work-experience",
       "projects",
@@ -133,13 +180,34 @@
       "contact"
     ],
     "navItems": [
-      { "id": "about", "label": "about" },
-      { "id": "skills", "label": "skills" },
-      { "id": "education", "label": "education" },
-      { "id": "work-experience", "label": "work experience" },
-      { "id": "projects", "label": "projects" },
-      { "id": "myresume", "label": "resume" },
-      { "id": "contact", "label": "contact me" }
+      {
+        "id": "about",
+        "label": "about"
+      },
+      {
+        "id": "skills",
+        "label": "skills"
+      },
+      {
+        "id": "education",
+        "label": "education"
+      },
+      {
+        "id": "work-experience",
+        "label": "work experience"
+      },
+      {
+        "id": "projects",
+        "label": "projects"
+      },
+      {
+        "id": "myresume",
+        "label": "resume"
+      },
+      {
+        "id": "contact",
+        "label": "contact me"
+      }
     ]
   },
   "meta": {

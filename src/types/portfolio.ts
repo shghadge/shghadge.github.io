@@ -30,12 +30,13 @@ export interface WorkExperience {
   url: string;
 }
 
+export interface SkillCategory {
+  name: string;
+  items: string[];
+}
+
 export interface Skills {
-  technical: {
-    proficient: string[];
-    familiar: string[];
-  };
-  social: string[];
+  categories: SkillCategory[];
 }
 
 export interface Publication {

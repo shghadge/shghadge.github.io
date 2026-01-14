@@ -1,4 +1,5 @@
 import { usePortfolioData } from "../hooks/usePortfolioData";
+import TechBadge from "./TechBadge";
 
 const Skills = () => {
   const portfolioData = usePortfolioData();
@@ -18,32 +19,22 @@ const Skills = () => {
         <h1 className="mb-4 lowercase text-2xl font-bold text-orange-400">
           technical skills
         </h1>
-        <div className="mb-4 text-base lowercase text-justify">
-          <span className="font-semibold text-blue-400">Proficient:</span>{" "}
-          {skills.technical.proficient.map((skill, i) => (
-            <span key={skill} className="">
-              {skill}
-              {i < skills.technical.proficient.length - 1 ? ", " : ""}
-            </span>
-          ))}
-        </div>
-        <div className="mb-4 text-base lowercase text-justify">
-          <span className="font-semibold text-blue-400">Familiar:</span>{" "}
-          {skills.technical.familiar.map((skill, i) => (
-            <span key={skill} className="">
-              {skill}
-              {i < skills.technical.familiar.length - 1 ? ", " : ""}
-            </span>
-          ))}
-        </div>
-        <div className="mb-4 text-base lowercase text-justify">
-          <span className="font-semibold text-blue-400">Social:</span>{" "}
-          {skills.social.map((skill, i) => (
-            <span key={skill} className="">
-              {skill}
-              {i < skills.social.length - 1 ? ", " : ""}
-            </span>
-          ))}
+        
+        <div className="max-h-[70vh] overflow-y-auto pr-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+            {skills.categories.map((category) => (
+              <div key={category.name} className="mb-2">
+                <h2 className="font-semibold text-blue-400 lowercase mb-3 border-b border-gray-800 pb-1 w-fit">
+                  {category.name}
+                </h2>
+                <div className="flex flex-wrap gap-2">
+                  {category.items.map((skill) => (
+                    <TechBadge key={skill} tech={skill} size="md" />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -51,3 +42,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
